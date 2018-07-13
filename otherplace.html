@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/telemedicine.css" rel="stylesheet">
+      <link href="css/other.css" rel="stylesheet">
+         <link href="css/student_home_page.css" rel="stylesheet">
+
+ <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body onload="myFunction()">
+  
+  
+ <!-- Navigation -->
+<nav class="navbar navbar-default" id="navtop"></nav>
+ 
+    <nav class="navbar navbar-default" id="nav2">
+        
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+              <a href="#" class="navbar-brand"  >
+          
+           <img class="" src="img/logo3.PNG"/>
+           </a>
+      <!--   <img src="<c:url value="/resources/img/rimlearninglogo.png" />">-->
+                
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                 <li>
+                     <a href="#" class=""  >
+          
+           <img  id="img1" class="" src="img/minstere.PNG" />
+           </a>
+                    </li>
+                    <li>
+                    
+                    
+                    <li>
+                     <a href="#" class=""  >
+          
+           <img class="" src="img/logo4.png"/>
+           </a>
+                    </li>
+                    <li>
+          
+                    
+                   
+                  
+ 
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+         
+    </nav>
+    <hr />
+  
+    
+    
+    <div class="container bootstrap snippets">
+    <div class="row">
+    
+    <div class="col-lg-9 col-md-9 col-sm-8 col-lg-pull-1" >
+   <div class="col-md-11 col-md-push-1 bg-white " style="    height: 444px;">
+   
+ 
+<video id="scre"  style="    width: 753px;" controls  ></video>
+<!-- screen -->
+
+</div>
+     
+     </div>
+     <div class="col-lg-3 col-md-3 col-sm-4" >
+       
+<table>
+<tr>
+
+<td><video  id="remote"  style="    width: 179px;
+    margin-left: -108px;" controls></video> </td>
+<td><video  id="local" style="    width: 179px;
+    margin-left: 46px;" controls></video> </td>
+</tr>
+
+</table>
+ 
+
+
+
+
+ <div class="col-md-11 col-md-push-1 bg-white " style="    margin-top: 64px;
+    width: 409px;
+    margin-left: -122px; "><div class="chat-message" style="    overflow: auto;
+    overflow-x: hidden;
+    min-height: 100px;
+    max-height: 100px;
+    overflow-y: auto;">
+<ul class="chat"  id="chat-output"  style="    margin-top: -67px;">
+</ul>
+</div>
+ <div class="chat-box bg-white"><div class="input-group"> <input  id="input-text-chat" class="form-control border no-shadow no-rounded" placeholder="Type your message here"> <span class="input-group-btn"> <button class="btn  no-rounded"  id="share-file" type="button" style="background-color: #71c9c6;
+    color: #fff;"><i class="fa fa-upload" aria-hidden="true"></i>
+ </button> </span></div></div></div>
+     
+    
+     </div>
+     </div></div>
+    
+    
+    
+    
+    
+    <!-- model -->
+    <div id="openv" class="modal fade" role="dialog">
+ 
+        
+<div class="form-wrap">
+		<div class="tabs">
+				<div class="modal-header" align="center">
+				
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				
+		
+				<b>Créer un nouvelle room </b>
+					
+				</div>
+		
+		</div><!--.tabs-->
+
+		<div class="tabs-content">
+			<div id="signup-tab-content" class="active">
+				<form   onsubmit="return false;" class="signup-form">
+				 
+					<input type="text" class="input"  name="user" id="namegroup" autocomplete="off" placeholder="type id Room">
+					 
+    <div class="row">    
+        <div class="col-xs-12 col-md-12  col-sm-12">  
+            <!-- image-preview-filename input [CUT FROM HERE]-->
+            <div class="input-group image-preview">
+                <span class="input-group-btn">
+                    <!-- image-preview-clear button -->
+                   <!--   <button type="button" class="btn btn-default image-preview-clear" style="display:none;"> 
+                         <span class="glyphicon glyphicon-remove"></span> Clear 
+                   </button>  -->
+                    <!-- image-preview-input -->
+           
+                    <div class="clearfix">
+                                    </div>
+                </span>
+            </div><!-- /input-group image-preview [TO HERE]--> 
+        </div>
+    </div>
+
+		
+		<div class="clearfix">
+                                    </div>
+		     
+                <button  class="button btn"  onclick="crtvsio()"><b>Open</b> <i class="fa fa-sign-in fa-1x"></i></button>
+            
+				</form><!--.signup-form-->
+			</div></div><!-- content end  -->
+			
+			</div><!-- form-wrap end -->
+			</div><!-- end model create group -->
+ <style type="text/css">
+
+
+.bg-white {
+  background-color: #fff;
+      margin-top: 3px;
+    margin-left: -13px;
+}
+
+.friend-list {
+  list-style: none;
+margin-left: -40px;
+}
+
+.friend-list li {
+  border-bottom: 1px solid #eee;
+}
+
+.friend-list li a img {
+  float: left;
+  width: 45px;
+  height: 45px;
+  margin-right: 0px;
+}
+
+ .friend-list li a {
+  position: relative;
+  display: block;
+  padding: 10px;
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+}
+
+.friend-list li.active a {
+  background-color: #f1f5fc;
+}
+
+.friend-list li a .friend-name, 
+.friend-list li a .friend-name:hover {
+  color: #777;
+}
+
+.friend-list li a .last-message {
+  width: 65%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.friend-list li a .time {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+}
+
+small, .small {
+  font-size: 85%;
+}
+
+.friend-list li a .chat-alert {
+  position: absolute;
+  right: 8px;
+  top: 27px;
+  font-size: 10px;
+  padding: 3px 5px;
+}
+
+.chat-message {
+  padding: 60px 20px 115px;
+}
+
+.chat {
+    list-style: none;
+    margin: 0;
+        
+}
+
+.chat-message{
+    background: #f9f9f9;  
+}
+
+.chat li img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50em;
+  -moz-border-radius: 50em;
+  -webkit-border-radius: 50em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.chat-body {
+  padding-bottom: 20px;
+}
+
+.chat li.left .chat-body {
+  margin-left: 70px;
+  background-color: #fff;
+}
+
+.chat li .chat-body {
+  position: relative;
+  font-size: 11px;
+  padding: 10px;
+  border: 1px solid #f1f5fc;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.chat li .chat-body .header {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f1f5fc;
+}
+
+.chat li .chat-body p {
+  margin: 0;
+}
+
+.chat li.left .chat-body:before {
+  position: absolute;
+  top: 10px;
+  left: -8px;
+  display: inline-block;
+  background: #fff;
+  width: 16px;
+  height: 16px;
+  border-top: 1px solid #f1f5fc;
+  border-left: 1px solid #f1f5fc;
+  content: '';
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+
+.chat li.right .chat-body:before {
+  position: absolute;
+  top: 10px;
+  right: -8px;
+  display: inline-block;
+  background: #fff;
+  width: 16px;
+  height: 16px;
+  border-top: 1px solid #f1f5fc;
+  border-right: 1px solid #f1f5fc;
+  content: '';
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.chat li {
+  margin: 15px 0;
+}
+
+.chat li.right .chat-body {
+  margin-right: 70px;
+  background-color: #fff;
+}
+
+.chat-box {
+ 
+   
+   
+    left: 417px;
+    right: 30px;
+    top: 422px;
+    padding: 15px;
+    margin-right: -12px;
+    /* margin-top: -114px; */
+    margin-left: -13px;
+    
+  border-top: 1px solid #eee;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+
+.primary-font {
+  color: #3c8dbc;
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
+
+/*tabs teacher */
+.nav-tabs { border-bottom: 2px solid #DDD; }
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+    .nav-tabs > li > a { border: none; color: #71c9c6; }
+        .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #71c9c6 !important; background: transparent; }
+        .nav-tabs > li > a::after { content: ""; background: #71c9c6; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+    .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+.tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+.tab-pane { padding: 15px 0; }
+.tab-content{padding:0px;
+    height: 192px;
+    margin-top: -2px;
+}
+
+.card {background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); margin-bottom: 30px;
+    margin-top: 9px;
+    margin-left: -7px;
+    width: 196px;
+ }
+#settings{    overflow: auto;
+    overflow-x: hidden;
+    min-height: 300px;
+    max-height: 300px;
+    
+    }
+  
+  #homes{
+  overflow: auto;
+    overflow-x: hidden;
+    min-height: 150px;
+    max-height: 150px;
+  }
+
+.chat-users .user {
+    position: relative;
+    padding: 0 0 0 50px;
+    display: block;
+    cursor: pointer;
+    margin: 0 0 20px;
+}
+.chat-users .user .avatar {
+    top: 0;
+    left: 0;
+}
+.chat .avatar {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+.chat-users .user .name {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.chat-users .user .mood {
+    font: 200 14px/20px "Raleway", sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chat .avatar img {
+    display: block;
+    border-radius: 20px;
+    height: 100%;
+}
+.chat .avatar .status.online {
+    background: #4caf50;
+}
+.chat .avatar .status {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+}
+.chat-users .user .status {
+    bottom: 0;
+    left: 28px;
+}
+
+
+</style>
+<script src="/teleradiologie/js/RTCMultiConnection.js"></script>
+<script src="https://cdn.webrtc-experiment.com/FileBufferReader.js"></script>
+
+<!-- socket.io for signaling -->
+<script src="https://rtcmulticonnection.herokuapp.com/socket.io/socket.io.js"></script>
+<script src="https://cdn.webrtc-experiment.com/getMediaElement.js"></script>
+ <script src="https://cdn.webrtc-experiment.com:443/getScreenId.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+  //  $("#scre").prop('muted', true); 
+function myFunction(){
+	
+	  $('#openv').modal('show');
+}
+function crtvsio(){
+	var input = document.getElementById("namegroup").value;
+	$('#openv').modal('hide');
+	startv(input);
+	
+	
+	
+}
+/**
+ * 
+ */
+var connection = new RTCMultiConnection();
+
+function startv(idroom){
+	
+    connection.socketURL = 'https://rtcmulticonnection.herokuapp.com:443/';
+    connection.enableFileSharing = true; // by default, it is "false".
+    connection.session = {
+    	    audio: true,
+    	    video: true,
+    	    data : true
+    	    
+    	};
+    connection.sdpConstraints.mandatory = {
+    	    OfferToReceiveAudio: true,
+    	    OfferToReceiveVideo: true
+    	};
+    	
+    	
+    	  
+    	 
+              
+    	    	connection.join(idroom);
+    	    	
+    	        
+
+           
+            connection.onstream = function(event) {
+                if (event.type === 'local' ) {
+                 	console.log("is local");
+                 	document.getElementById('local').src = URL.createObjectURL(event.stream);
+                 	
+                 	
+                 	
+                }
+                	
+                
+
+                if (event.type === 'remote') {
+                	console.log("is remote");
+                    if (event.stream.isVideo) {
+                        if (event.stream.getAudioTracks().length && event.stream.getVideoTracks().length) {
+                            // Audio+Video stream
+                        	//remoteVideo.src = URL.createObjectURL(event.stream);
+                        	console.log("is remote video ");
+                        	document.getElementById('remote').src = URL.createObjectURL(event.stream);
+                        } 
+                }
+                    
+                    if (event.stream.isScreen) {
+                        // it is screen
+                    	console.log("is remote screen ");
+                    	//video.id = event.streamid;
+                    	//connection.streamEvents[event.streamid].stream.mute("audio");
+
+                    	//connection.attachStreams.forEach(function(stream) {
+                    	  //stream.mute(); // mute all tracks
+                    	//});
+                    	document.getElementById('scre').src = URL.createObjectURL(event.stream);
+                    }
+            }
+            };
+            
+         
+            
+            var imguser = "/img/avatar6.png";
+            var name = "guest";
+            //......................................................
+            //................FileSharing/TextChat Code.............
+            //......................................................
+           
+            document.getElementById('share-file').onclick = function() {
+             var fileSelector = new FileSelector();
+             fileSelector.selectSingleFile(function(file) {
+            	 connection.send({
+		    		    names: name,
+		    		    img: imguser,
+		    		    types:'file'
+		    		 
+		    		});
+                 connection.send(file);
+             });
+            };
+            document.getElementById('input-text-chat').onkeyup = function(e) {
+             if(e.keyCode != 13) return;
+             
+             // removing trailing/leading whitespace
+             this.value = this.value.replace(/^\s+|\s+$/g, '');
+             if (!this.value.length) return;
+            
+	    		 connection.send({
+		    		    names: name,
+		    		    img: imguser,
+		    		    msg: this.value,	
+		    		    type:'msg'
+		    		 
+		    		});
+            
+             
+             appendDIV(this.value);
+             this.value =  '';
+            };
+            var chatContainer = document.querySelector('#chat-output');
+	    	function appendDIV(event) {
+	    		var data =event.data || event;
+	    		
+	    		
+	    	 var div = document.createElement('div');
+	    	 
+	    	 div.innerHTML = "<li class='left clearfix'> <span class='chat-img pull-left'>" +
+	    	 		"<img src='/teleradiologie"+imguser+"' alt='User Avatar'> </span>" 
+	    	 +"	    		 <div class='chat-body clearfix'><div class='header'> <strong class='primary-font'>"+name+"</strong>"
++"  <small class='pull-right text-muted'><i class='fa fa-clock-o'></i> 12 mins ago</small>" +
+		"</div><p> "+data+"</p></div></li>";
+	    		  
+	    	 chatContainer.insertBefore(div, chatContainer.firstChild);
+            /*var chatContainer = document.querySelector('.chat-output');
+            function appendDIV(event) {
+             var div = document.createElement('div');
+             div.innerHTML = event.data || event;
+             chatContainer.insertBefore(div, chatContainer.firstChild);
+             div.tabIndex = 0; div.focus();*/
+             
+            // document.getElementById('input-text-chat').focus();
+            }   
+            //connection.onmessage = appendDIV;
+	    	var namef;
+	    	var imgf;
+            connection.onmessage = function(event) {
+                var senderFullName = event.data.names;
+                var img = event.data.img;
+                var msg = event.data.msg;
+                var types = event.data.type;
+               
+             
+                
+                 if(types=="msg"){
+                	// alert("is msg");
+                	   var div = document.createElement('div');
+             	    	 
+             	    	 div.innerHTML ="<li class='right clearfix'><span class='chat-img pull-right'> <img src='/teleradiologie"+img+"' alt='User Avatar'>"+ 
+                             "</span><div class='chat-body clearfix'><div class='header'> <strong class='primary-font'>"+senderFullName+"</strong>"+
+                              "<small class='pull-right text-muted'><i class='fa fa-clock-o'></i> 13 mins ago</small></div><p>" + 
+                              msg+"</p></div></li>";
+             	    		 chatContainer.insertBefore(div, chatContainer.firstChild);
+                	 
+                 }if(types=="user"){
+                	 alert("new user"+senderFullName+"  "+img);
+                	 var online = document.querySelector('#online-u');
+    	    		 var div = document.createElement('div');
+    	    		 div.innerHTML ="<li class='list-group-item'><div class='user'>"+
+    	    	     "<div class='avatar'><img src='/rim_learning_spring_mvc"+img+"' alt='Username'>"+
+    	    	        "<div class='status online'></div></div><div class='name'>"+senderFullName+"'</div><div class='mood'"+
+    	    	        "</div></div></li>";
+    	    		 online.insertBefore(div, online.firstChild);
+                	 
+                 }else{
+                	// alert("is file");
+                	 namef=event.data.names;
+                	 imgf=event.data.img;
+                	//alert(namef +"  "+imgf);
+                	
+             	    	//var d = document.getElementById('file-container');
+                	// d.innerHTML = '<a href="' + msg.url + '" target="_blank" download="' + msg.name + '">' + msg.name + '</a>';
+                	 
+              	
+                 }
+              
+            }
+            connection.onFileEnd = function (file) {
+            	// alert("file to std");
+            		/*var d = document.getElementById('file');
+             	 
+                d.innerHTML = '<a  id="d" href="' + file.url + '" download="' + file.name + '">Download <strong style="color:green;">' + file.name + '</strong> </a>';
+               */
+            	 if(namef!= null && imgf!=null){
+            	 var div = document.createElement('div');
+    	    	 div.innerHTML ="<li class='right clearfix'><span class='chat-img pull-right'> <img src='/teleradiologie"+imgf+"' alt='User Avatar'>"+ 
+                    "</span><div class='chat-body clearfix'><div class='header'> <strong class='primary-font'>"+namef+"</strong>"+
+                     "<small class='pull-right text-muted'><i class='fa fa-clock-o'></i> 13 mins ago</small></div>" + 
+                     +"</div></li>"+
+    	    	 "<a  href='" + file.url + "' download='" + file.name + "'>Download <strong style='color:black;'>'" + file.name + "'</strong> </a>";
+    	         chatContainer.insertBefore(div, chatContainer.firstChild);
+    	    	/* var y = document.getElementById('copy');
+                 y.innerHTML = '<a  id="d" href="' + file.url + '" download="' + file.name + '">Download <strong style="color:green;">' + file.name + '</strong> </a>';
+           
+    	    	*/
+    	    
+    	    	//("#file").clone().appendTo($("#copy"));
+                 /*var dr =document.getElementById('file-container');
+                 var r =document.getElementById('file');
+                 connection.filesContainer = dr;
+                 connection.filesContainer = r;*/
+                 //dr.html($("#file").html());
+               //  ("#file-container").clone().appendTo($("#file"));
+    	         namef=null;
+    	         imgf=null;
+            	 }else{
+            		 var div = document.createElement('div');
+        	    	 div.innerHTML ="<li class='left clearfix'><span class='chat-img pull-left'> <img src='/teleradiologie"+imguser+"' alt='User Avatar'>"+ 
+                        "</span><div class='chat-body clearfix'><div class='header'> <strong class='primary-font'>"+name+"</strong>"+
+                         "<small class='pull-right text-muted'><i class='fa fa-clock-o'></i> 13 mins ago</small></div>" + 
+                         +"</div></li>"+
+        	    	 "<a  href='" + file.url + "' download='" + file.name + "'>Download <strong style='color:black;'>'" + file.name + "'</strong> </a>";
+        	         chatContainer.insertBefore(div, chatContainer.firstChild);
+            		 
+            		 
+            	 }
+            };
+           
+           // ("#file-container").clone().appendTo($("#file"));
+            
+           
+
+           
+
+
+           // connection.filesContainer = document.getElementById('file-container');
+            
+        	
+
+	
+          
+}
+	
+connection.onopen = function() {
+	
+	/*var online = document.querySelector('#online-u');
+	 var div = document.createElement('div');
+	 div.innerHTML ="<li class='list-group-item'><div class='user'>"+
+     "<div class='avatar'><img src='/rim_learning_spring_mvc"+imguser+"' alt='Username'>"+
+        "<div class='status online'></div></div><div class='name'>'"+name+"'</div><div class='mood'"+
+        "</div></div></li>";
+	 online.insertBefore(div, online.firstChild);*/
+	 
+	
+	
+   
+};	
+           
+
+
+
+
+</script>
+  </body>
+</html>

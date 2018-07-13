@@ -1,0 +1,97 @@
+
+
+
+
+/*form payment post  */
+
+
+.form-wrap {
+    background-color: #fff;
+    width: 320px;
+    margin: 3em auto;
+    border-radius: 20px;
+    box-shadow: 0px 1px 8px #BEBEBE;
+    -webkit-box-shadow: 0px 1px 8px #BEBEBE;
+    -moz-box-shadow: 0px 1px 8px #BEBEBE;
+}
+.form-wrap .tabs {
+    overflow: hidden;
+}
+#data {
+    background-color: #f6f7f9;
+    border-radius: 11px;
+    font-weight: bold;
+    height: 86px;
+    margin-top: 19px;
+}
+
+.form-wrap .tabs-content {
+    padding: 1.5em;
+}
+
+#formpay{
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+}
+.form-wrap form .input {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: inherit;
+    font-family: inherit;
+    padding: .8em 0 10px .8em;
+    border: 1px solid #CFCFCF;
+    outline: 0;
+    display: inline-block;
+    margin: 0 0 .8em 0;
+    padding-right: 2em;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    resize: none;
+}
+.form-wrap form .button {
+    width: 100%;
+    padding: .8em 0 10px .8em;
+    background-color: #71c9c6;
+    border-radius: 11px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+/*browse img*/
+
+ .container{
+    margin-top:20px;
+}
+.image-preview-input {
+    position: relative;
+	overflow: hidden;
+	margin: 0px;    
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;    
+}
+.image-preview-input input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: 0;
+}
+.image-preview-input-title {
+    margin-left:2px;
+}

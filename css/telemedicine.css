@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+
+
+
+body{
+	
+	    background-color: #E6E6E6;
+}
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+     height: 239%;
+    padding: 15px;
+    width: auto;
+    margin-top: -2px;
+    margin-left: -11px;
+}
+hr{
+	
+	margin-top: -20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 9px solid #F7F489;
+}
+ #r1{
+ 	
+ }
+ 
+ .navbar-default {
+ 	    margin-top: 17px;
+    background-color: #ffffff;
+    border-color: #fff;
+}
+
+#img1{
+
+       margin-right: 133px;
+	
+}
+#navtop{
+	
+	    background-color: #009245;
+    border-color: #009245;
+    margin-top: -24px;
+	
+}
+#nav2{
+	
+	    margin-top: -20px;
+	
+}

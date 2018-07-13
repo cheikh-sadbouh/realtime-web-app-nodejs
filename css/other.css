@@ -1,0 +1,6 @@
+@CHARSET "UTF-8";
+
+video {
+    object-fit: fill;
+    width: 30%;
+}
